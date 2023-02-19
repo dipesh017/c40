@@ -41,4 +41,15 @@ pipeline{
         }
 
     }
+    post{
+        always{
+            echo "its always block"
+        }
+        success{
+            echo "its success block"
+        }
+        failure{
+            echo "its failure block"
+        }
+    }
 }
